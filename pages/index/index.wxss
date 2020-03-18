@@ -1,0 +1,32 @@
+.head {
+  display: flex;
+  justify-content: space-around;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.vant_ {
+  width: 65%;
+}
+
+.sear_txt {
+  width: 140rpx;
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: relative;
+}
+
+.sear_tp {
+  margin-left: 9%;
+  height: 50rpx;
+  width: 50rpx;
+  line-height: 100rpx;
+  position: relative;
+  top: 16rpx;
+}
+
+.sear_tp image {
+  height: 100%;
+  width: 100%;
+}

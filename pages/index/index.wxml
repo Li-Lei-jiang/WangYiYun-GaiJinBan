@@ -1,0 +1,9 @@
+<indexSearch></indexSearch>
+<takeTurnsToPlay></takeTurnsToPlay>
+<recommendThePlaylist></recommendThePlaylist>
+<newSongNewAlbum></newSongNewAlbum>
+<view wx:if="{{newMusic.length > 0}}">
+  <new newPower="{{newMusic}}" newIndex="{{cont}}"></new>
+  <new newPower="{{recommendRadio}}" newIndex="{{dT}}"></new>
+  <new newPower="{{recommendShows}}" newIndex="{{CARD}}"></new>
+</view>

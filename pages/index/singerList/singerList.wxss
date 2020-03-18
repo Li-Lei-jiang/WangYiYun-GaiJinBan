@@ -1,0 +1,294 @@
+/* pages/index/singerList/singerList.wxss */
+.singerLeist_input {
+  position: relative;
+  display: flex;
+  line-height: 60rpx;
+  margin-top: 3%;
+}
+
+.singerLeist_tp {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 20rpx;
+  left:69rpx;
+}
+
+.singerLeist_tp image {
+  width: 100%;
+  height: 100%;
+}
+
+.singerLeist_input_ipt {
+  background: #f7f8fa;
+  height: 80rpx;
+  width: 76%;
+  margin: 0 auto;
+  padding-left:9%;
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+
+.singerList_list {
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.singerList_gs {
+  color: #a2a3a4;
+  margin: 0 1%;
+  text-align: center;
+}
+
+.singerList_list_txt {
+  font-size: 25rpx;
+  height: 59rpx;
+  line-height: 60rpx;
+  width: 120rpx;
+}
+
+.kuang {
+  height: 60rpx;
+  margin-top: 3%;
+}
+
+.botm_red {
+  /* border-bottom: 1prx solid #FF0000; */
+  background: #f7f8fa;
+  color: red;
+}
+
+/* 单曲 */
+
+.single_tp {
+  width: 30rpx;
+  height: 30rpx;
+  /* position: absolute;
+  top: 20rpx;
+  left: 45rpx; */
+}
+
+.single_tp image {
+  width: 100%;
+  height: 100%;
+}
+
+.single_play {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+  border-bottom: 1rpx solid #f7f8fa;
+  padding: 0 2%;
+}
+
+.single_left {
+  line-height: 60rpx;
+  display: flex;
+}
+
+.single_txt {
+  font-size: 28rpx;
+  font-weight: bold;
+  width: 183rpx;
+  text-align: center;
+}
+
+.single_right {
+  line-height: 60rpx;
+  display: flex;
+}
+
+.single_txt_rig {
+  font-size: 28rpx;
+}
+
+.single_border {
+  line-height: 60rpx;
+  border-bottom: 1rpx solid #f7f8fa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.single_name {
+  font-size: 25rpx;
+  padding-left: 2%;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.single_border_rig {
+  display: flex;
+  width: 15%;
+  justify-content: space-around;
+}
+/* 专辑 */
+.albums_tp{
+  width: 100rpx;
+  height: 100rpx;
+}
+.albums_tp image{
+   width: 100%;
+  height: 100%;
+}
+.albums_entirety{
+  display: flex;
+  padding-left: 2%;
+margin: 2% 0;
+
+}
+.albums_name_{
+  margin-left: 3%;
+  line-height: 50rpx;
+  width: 80%;
+   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.albums_name{
+font-size: 29rpx;
+
+}
+.albums_time{
+font-size: 23rpx;
+color: #cdcdcd;
+
+}
+/* 歌手 */
+.artists{
+display: flex;
+padding: 0 2%;
+margin-top: 3%;
+}
+.artists_tp{
+  width: 100rpx;
+  height: 100rpx;
+}
+.artists_tp image{
+  width: 100%;
+  height: 100%;
+   border-radius: 50%;
+}
+.artists_name{
+  margin-left: 4%;
+line-height: 100rpx;
+font-size: 28rpx;
+
+}
+.userprofiles{
+  justify-content: space-between
+}
+.userprofiles_{
+  display: flex;
+}
+.userprofiles_name{
+  line-height: 48rpx;
+  width: 70%;
+height: 150rpx;
+
+}
+.userprofiles_name_{
+  font-size: 25rpx;
+/* height: 65rpx; */
+ overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+}
+.userprofiles_focus{
+color: white;
+background: red;
+height: 40rpx;
+width: 100rpx;
+position: relative;
+top: 5rpx;
+}
+.userprofiles_tp{
+  position: relative;top: 5rpx;
+}
+/* 视频 */
+.videos{
+  display: flex;
+  height: 200rpx;
+  position: relative;
+  padding: 0 3%;
+
+}
+.videos_tp{
+ width: 220rpx;
+height: 150rpx;
+
+}
+.videos_tp image{
+  width: 100%;
+  height: 100%;
+}
+.videos_title{
+  margin-left: 3%;
+width: 100%;
+
+}
+.videos_title_tit{
+  font-size: 29rpx;
+overflow: hidden;
+  text-overflow: ellipsis;
+}
+.videos_icon{
+  width: 25rpx;
+height: 25rpx;
+position: absolute;
+top: -2rpx;
+left: 5rpx;
+
+}
+.videos_icon image{
+  width: 100%;
+  height: 100%;
+}
+.videos_icon_al{
+  display: flex;
+  position: absolute;
+  top: 5rpx;
+  left: 5rpx;
+}
+.videos_icon_bf{
+font-size: 19rpx;
+  color: white;
+  width: 100rpx;
+position: absolute;
+top: 8rpx;
+left: 26rpx;
+
+}
+/* 电台 */
+.djRadios_{
+  display: flex;padding: 0 2%;
+margin: 2% 0;
+
+}
+.djRadios_tp{
+ width: 150rpx;
+height: 100rpx;
+
+}
+.djRadios_tp image{
+  height: 100%;
+  width: 100%
+}
+.djRadios_title{
+  margin-left: 3%;
+width: 100%;
+
+}
+.djRadios_title_name{
+  font-size: 28rpx;
+
+}
+.djRadios_title_txt{
+  font-size: 25rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

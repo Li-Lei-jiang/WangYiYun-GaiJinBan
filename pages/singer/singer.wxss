@@ -1,0 +1,23 @@
+.artists_tp{
+ width: 150rpx;
+height: 150rpx;
+}
+.artists_tp image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.artists_item{
+  display: flex;
+line-height: 150rpx;
+padding: 0 3%;
+
+}
+.artists_txt{
+font-size: 24rpx;
+margin-left: 7%;
+
+}
+.artists_singer{
+  margin: 3% 0;
+}

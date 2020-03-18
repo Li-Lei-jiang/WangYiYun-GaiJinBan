@@ -1,0 +1,17 @@
+<!-- 新碟 -->
+<view class="TheNewDisc">
+  <view class="TheNewDisc_all">
+    <text class="TheNewDisc_titl">新碟</text>
+    <text class="TheNewDisc_solid">|</text>
+    <text class="TheNewDisc_" bindtap="getNewSong"> 新歌</text>
+  </view>
+  <view class="newSong">更多新碟</view>
+</view>
+<view class="song_" >
+  <view wx:for="{{newSong}}" wx:key="{{index}}" class="song__item" data-id="{{item.id}}" data-item="{{item}}" bindtap="goToNewSong">
+    <view class="song_tp">
+      <image src="{{item.picUrl}}"></image>
+    </view>
+    <view class="song_txt">{{item.name}}</view>
+  </view>
+</view>

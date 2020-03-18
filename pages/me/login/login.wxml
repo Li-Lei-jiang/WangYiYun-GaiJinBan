@@ -1,0 +1,10 @@
+<view class="kuang">
+  <view class="loginMethod">
+    <view class="loginMethod_tab:{{count===1? 'underlines':''}}" bindtap="cellphone">手机号登录</view>
+    <view class="loginMethod_tab:{{count===2? 'underlines':''}}" bindtap="emalls">邮箱登录</view>
+  </view>
+</view>
+<!-- 手机登录 -->
+<loginInAccountAndpassword wx:if="{{count === 1}}"></loginInAccountAndpassword>
+<!-- 邮箱登录 -->
+<emailLloginInAccountAndpassword wx:if="{{count === 2}}"></emailLloginInAccountAndpassword>

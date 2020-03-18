@@ -1,0 +1,42 @@
+<view wx:if="{{openId.length === 0}}">
+  <view class="login_">
+    <view>您还没有登陆喔</view>
+    <view class="login_butt" bindtap="gologin">立即登录</view>
+  </view>
+</view>
+<view wx:if="{{openId.length > 0}}">
+  <view class="urse_head">
+    <view class="user_head">
+      <view class="user_tp">
+        <image src="{{profile.avatarUrl}}"></image>
+      </view>
+      <view class="user_name">
+        <view>{{profile.nickname}}</view>
+        <view class="uesr_vip">Lv: {{profile.playlistCount}}</view>
+      </view>
+
+    </view>
+    <view class="user_sgin">签到</view>
+  </view>
+  <view class="urse_all_mess">
+    <view class="urse_mess">
+      <view>{{profile.followeds}}</view>
+      <view class="urse_mess_txt">动态</view>
+    </view>
+    <view class="urse_mess">
+      <view>{{profile.follows}}</view>
+      <view class="urse_mess_txt">关注</view>
+    </view>
+    <view class="urse_mess">
+      <view>{{profile.playlistBeSubscribedCount}}</view>
+      <view class="urse_mess_txt">粉丝</view>
+    </view>
+    <view class="urse_mess" bindtap="gocompile">
+      <view>{{profile.followeds}}</view>
+      <view class="urse_mess_txt">编辑资料</view>
+    </view>
+  </view>
+  <button bindtap="myMsic">我的音乐</button>
+  <view class="urse_esc" bindtap="outMusic">退出登录</view>
+</view>
+

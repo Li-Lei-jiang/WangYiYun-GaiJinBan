@@ -1,0 +1,22 @@
+<!-- 推荐歌单 -->
+<view class="RecommendThePlaylist">
+  <view class="RecommendThePlaylist_txt">推荐歌单</view>
+  <view class="SongSingleSquare">
+    <text>歌单广场</text>
+  </view>
+</view>
+<!-- 九宫格 -->
+<view class="listMusic">
+  <view wx:for="{{music_list}}" wx:key="{{index}}" class="list_item" data-id="{{item.id}}" bindtap="toMenu">
+    <view class="music_list-tp">
+      <image src="{{item.picUrl}}" class="music_list-tp_"></image>
+    </view>
+    <view class="music_list-text">{{item.name}}</view>
+    <view class="music_list_tp_tp_">
+      <view class="music_list_tp_tp">
+        <image src="../../img/b-166.png"></image>
+      </view>
+      <view class="music_list_tp_tp_txt">{{item.playCount/10000}}万</view>
+    </view>
+  </view>
+</view>

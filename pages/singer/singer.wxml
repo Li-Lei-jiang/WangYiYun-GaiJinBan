@@ -1,0 +1,11 @@
+<singerClassification bind:artists="getartists"></singerClassification>
+<view class="artists_list" wx:if="{{artists.length>0}}">
+  <view wx:for="{{artists}}" wx:key="{{index}}" class="artists_singer" bindtap="toSingerMusic" data-singerId="{{item.id}}">
+    <view class="artists_item">
+      <view class="artists_tp">
+        <image src="{{item.img1v1Url}}"></image>
+      </view>
+      <view class="artists_txt">{{item.name}}</view>
+    </view>
+  </view>
+</view>

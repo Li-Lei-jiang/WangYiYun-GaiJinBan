@@ -1,0 +1,71 @@
+<view class="head" wx:if="{{flag===false}}">
+  <view class="head_tp">
+    <image src="../../img/mkf.png"></image>
+  </view>
+  <view class="head_inpt">
+    <input class="head_inpt_" type="text" placeholder="请输入搜索关键字" bindfocus="inputShow"></input>
+    <view class="head_tp_inpt">
+      <image src="../../img/fdj.png"></image>
+    </view>
+  </view>
+  <view class="head_tp">
+    <image src="../../img/全局_插入歌曲_24.png"></image>
+  </view>
+</view>
+<!-- 第二列表搜索 -->
+<view wx:if="{{flag===true || show===true}}" class="head_inpt_er_true">
+  <view class="head_inpt_er">
+    <input type="text" placeholder="请输入搜索关键词" class="head_inpt_er_input" bindinput="inputevent" value="{{inputVal}}" bindconfirm="dones" bindfocus="searchs"></input>
+    <image src="../../img/fdj.png" class="head_inpt_er_tp"></image>
+    <text class="head_inpt_er_txt" bindtap="inputShow">取消</text>
+  </view>
+  <!-- 搜索历史 -->
+  <view wx:if="{{show===false}}">
+    <view wx:if="{{flag===true}}">
+      <view class="SearchHistory">
+        <view class="SearchHistory_tory">
+          <view class="SearchHistory_txt">搜索历史</view>
+          <view class="SearchHistory_tp">
+            <image src="../../img/ljx.png"></image>
+          </view>
+        </view>
+        <scroll-view scroll-x="true">
+          <view class="SearchHistory_item" wx:for="{{arr}}" wx:key="{{index}}">
+            <view class="SearchHistory_">{{item}}</view>
+          </view>
+        </scroll-view>
+      </view>
+      <!-- 热搜榜 -->
+      <view wx:if="{{flag===true}}">
+        <view class="veryHot_kuang">热搜榜</view>
+        <view wx:for="{{host}}" wx:key="{{id}}" data-index="index" class="veryHot">
+          <view class="veryHot_index">{{index}}</view>
+          <view class="veryHot_name">{{item.first}}</view>
+          <view class="veryHot_hot" wx:if="{{index < 3}}">↑</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 建议展示 -->
+  <view wx:if="{{show===true}}">
+    <view class="sreach_value" wx:if="{{songs.length>0}}"> 搜索 “ {{keywords}} ”</view>
+    <!-- 歌手 -->
+    <view class="erarch_result" wx:for="{{artists}}" bindtap="getSuggest" data-nema="{{item.name}}" wx:key="{{index}}" wx:if="{{artists.length>0}}">
+      <view class="erarch_result_tp">
+        <image src="../../img/fdj.png"></image>
+      </view>
+      <view class="erarch_result_txt">
+        <view>{{item.name}}</view>
+      </view>
+    </view>
+    <!-- 单曲 -->
+    <view class="erarch_result" wx:for="{{songs}}" wx:key="{{index}}" bindtap="getSuggest" data-nema="{{item.name}}" wx:if="{{songs.length>0}}">
+      <view class="erarch_result_tp">
+        <image src="../../img/fdj.png"></image>
+      </view>
+      <view class="erarch_result_txt">
+        <view>{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>

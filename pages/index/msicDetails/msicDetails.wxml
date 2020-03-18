@@ -1,0 +1,32 @@
+<view >
+  <view class="menu_tp">
+    <image src="{{menu_details.coverImgUrl}}"></image>
+  </view>
+  <view class="menu_icon">
+    <image src="../../../img/wyy.png"></image>
+  </view>
+  <text class="menu_txt">{{menu_details.name}}</text>
+</view>
+<view class="menu_bf" >
+  <view class="menu_bf-all">
+    <view class="menu_bf_tp">
+      <image src="../../../img/bf.png"></image>
+    </view>
+    <view>播放全部（共{{tracks.length}}首）</view>
+  </view>
+  <view class="menu_bf_tp_sc">+ 收藏({{menu_details.subscribedCount}})</view>
+</view>
+<view>
+  <view wx:for="{{tracks}}" data-id="{{item.id}}" wx:index="{{index}}" wx:key="{{key}}" class="menu_list" bindtap="musicPlayer" data-name="{{item.name}}" data-item="{{item}}">
+    <view class="menu_gequ">
+      <view class="menu_txtss">{{index}}</view>
+      <view class="menu_names">
+        <view class="menu_name">{{item.name}}</view>
+        <view class="menu_txts">{{item.ar[0].name}}--{{item.name}}</view>
+      </view>
+    </view>
+    <view class="menu_bfb">
+      <image src="../../../img/bf.png"></image>
+    </view>
+  </view>
+</view>

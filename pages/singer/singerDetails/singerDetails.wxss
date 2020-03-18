@@ -1,0 +1,56 @@
+.artist_tiele{
+  text-align: center;
+  line-height: 67rpx
+}
+.artist_tp{
+  width: 100%;
+}
+.artist_tp image{
+  width: 100%;
+}
+.singMsic_bf{
+  width: 60rpx;
+height: 60rpx;
+position: relative;
+top: 25rpx;
+
+}
+.singMsic_bf image{
+   width: 100%;
+  height: 100%
+}
+.singMsic_singer{
+margin-left: 10%;
+font-size: 28rpx;
+
+}
+.singMsic_item{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #EBEAE6;
+  padding: 0 3%;
+  margin: 2% 0;
+  line-height: 54rpx;
+}
+.singMsic_show{
+  display: flex;
+  /* justify-content: space-around */
+  width: 80%;
+  line-height: 60rpx;
+
+}
+.singMsic_{
+  display: flex;
+}
+.singMsic_list{
+  margin: 3% 0;
+}
+.singMsic_wz{
+  color: #ccc;
+  font-size: 28rpx;
+position: relative;
+top:30rpx;
+}
+.singMsic_txt{
+   color: #ccc;
+}

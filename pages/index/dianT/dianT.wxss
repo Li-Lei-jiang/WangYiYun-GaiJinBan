@@ -1,0 +1,66 @@
+.dianT_tp {
+  width: 100%;
+  height: 465rpx;
+}
+
+.dianT_tp image {
+  width: 100%;
+  height: 100%;
+}
+
+.dianT_tp_tx {
+  position: absolute;
+  top: 307rpx;
+  left: 24rpx;
+  line-height: 42rpx;
+  width: 81%;
+  height: 81rpx;
+}
+
+.dianT_tp_tx1 {
+  font-size: 28rpx;
+  color: white;
+   width: 81%; 
+height: 90rpx; 
+overflow: hidden;
+text-overflow:ellipsis;
+/* white-space: nowrap; */
+}
+
+.dianT_tp_tx2 {
+  font-size: 24rpx;
+  color: #cdcdcd;
+}
+
+.dianT_tp_icon_ {
+  display: flex;
+  position: absolute;
+  top: 351rpx;
+  right: 24rpx;
+  width: 100rpx;
+  color: white;
+  font-size: 28rpx;
+  background: red;
+}
+
+.dianT_tp_icon {
+  width: 25rpx;
+  height: 25rpx;
+  color: white;
+}
+
+.dianT_tp_icon image {
+  width: 100%;
+  height: 100%;
+}
+.dianT_choose{
+  display: flex;
+justify-content: space-around;
+line-height: 60rpx;
+font-size: 28rpx;
+
+}
+.dianT_condition{
+  color: red;
+  border-bottom: 1rpx solid red;
+}

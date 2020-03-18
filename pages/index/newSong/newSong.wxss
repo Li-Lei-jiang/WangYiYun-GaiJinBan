@@ -1,0 +1,244 @@
+.newSong_head {
+  position: relative;
+}
+
+.newSong_head_tp {
+  width: 100%;
+  height: 600rpx;
+  filter: blur(5rpx);
+  z-index: -2;
+}
+
+.newSong_head_tp image {
+  width: 100%;
+  height: 100%;
+}
+
+.newSong_head_cover {
+  width: 250rpx;
+  height: 250rpx;
+  position: absolute;
+  left: 26rpx;
+  top: 145rpx;
+}
+
+.newSong_head_cover image {
+  width: 100%;
+  height: 100%;
+}
+
+newSong_head {
+  position: relative;
+  top: 5rpx;
+  left: 5rpx;
+  display: flex;
+  width: 100%;
+  height: 115rpx;
+}
+
+.newSong_head_ {
+  position: absolute;
+  top: 66rpx;
+  left: 23rpx;
+  display: flex;
+  width: 84%;
+}
+
+.back {
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.back image {
+  width: 100%;
+  height: 100%;
+}
+
+.newSong_title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: white;
+}
+
+.newSong_name_ {
+  position: absolute;
+  top: 143rpx;
+  left: 41%;
+  color: white;
+  font-size: 31rpx;
+}
+
+.newSong_name_ringer {
+  color: #cdcdcd;
+  font-size: 29rpx;
+}
+
+.newSong_time {
+  position: absolute;
+  top: 272rpx;
+  left: 41%;
+  color: #cdcdcd;
+  font-size: 25rpx;
+}
+
+.newSong_time_ {
+  width: 100%;
+}
+
+.newSong_time_introduce {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.newSon_icons {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.newSon_icons image {
+  width: 100%;
+  height: 100%;
+}
+
+.newSon_icons_tx {
+  color: white;
+  font-size: 25rpx;
+  text-align: center;
+}
+
+.newSon_icons_item {
+  width: 50rpx;
+}
+
+.newSon_icons_choose {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+  position: absolute;
+  top: 229px;
+  left: 0;
+  width: 100%;
+}
+
+.newSon_end {
+  width: 100%;
+  background: white;
+  height: 769rpx;
+  border-radius: 4% 4% 0 0;
+  margin-top: 5%;
+}
+
+.newSon_end_ {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #f7f8fa;
+}
+
+.newSon_end_vip {
+  display: flex;
+}
+
+.newSon_end_vip_tp {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.newSon_end_vip_tp image {
+  width: 100%;
+  height: 100%;
+}
+
+.newson_vip {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 3%;
+  border-radius: 15% 25% 0 0;
+  border-bottom: 1rpx solid #f7f8fa;
+  line-height: 75rpx;
+}
+
+.newson_vip_tp {
+  display: flex;
+}
+
+.newson_vip_tp_tp {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.newson_vip_tp_tp image {
+  width: 100%;
+  height: 100%;
+}
+
+.bof {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.bof image {
+  width: 100%;
+  height: 100%;
+}
+
+.bof_txt {
+  width: 115rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: white;
+  background: red;
+  text-align: center;
+  font-size: 25rpx;
+  border-radius: 20%;
+}
+
+.bof_roes {
+  display: flex;
+  width: 340rpx;
+  justify-content: space-around;
+}
+
+.bof_roe {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  margin-top: 3%;
+  border-bottom: 1rpx solid #f7f8fa;
+}
+
+.piay_row {
+  display: flex;
+  margin: 2% 0;
+  border-bottom: 1rpx solid #f7f8fa;
+}
+
+.piay_row_index {
+  width: 50rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #cdcdcd;
+}
+
+.piay_row_msg {
+  width: 80%;
+}
+
+.piay_row_msg_txt {
+  width: 100%;
+  font-size: 25rpx;
+  display: flex;
+}
+
+.piay_row_msg_txt view {
+  border: 1rpx solid red;
+  width: 50rpx;
+  color: red;
+  font-size: 20rpx;
+  margin-left: 1%;
+  text-align: center;
+}

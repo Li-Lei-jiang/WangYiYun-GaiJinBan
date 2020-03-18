@@ -1,0 +1,90 @@
+imgUrl_tps{
+
+}
+.imgUrl_tps image {
+  height: 100vh;
+width: 100%;
+filter: blur(30rpx);
+
+}
+@keyframes imgUrl_tp {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+  transform: rotate(360deg);
+  }
+}
+.msic_titles{
+  position: absolute;
+  top: 50rpx;
+  transform: translate(-50%);
+  left: 50%;
+  font-size: 30rpx;
+  color: white;
+}
+.imgUrl_tp {
+  position: absolute;
+  top:23%;
+  left: 20%;
+  z-index: 5;
+  /* transform: translate(-50%,-50%); */
+animation: imgUrl_tp 25s linear infinite;
+}
+.imgUrl_tp image{
+ border-radius: 50%;
+ width: 439rpx;
+height: 439rpx;
+
+}
+.msic_tp_list{
+  display: flex;
+justify-content: space-around;
+line-height: 127rpx;
+position: absolute;
+bottom: 280rpx;
+left: 0;
+width: 100%;
+
+}
+.msic_tp{
+  width: 50rpx;
+  height: 50rpx;
+}
+.msic_tp image{
+  width: 100%;
+  height: 100%;
+}
+.msic_xdt{
+  position: absolute;
+bottom:128rpx;
+width: 73%;
+left: 93rpx;
+/* display: flex; */
+}
+.msic_tp_lists{
+  display: flex;
+justify-content: space-around;
+line-height: 127rpx;
+position: absolute;
+bottom: 61rpx;
+left: 0;
+width: 100%;
+
+}
+.msic_xdt_currentTime{
+font-size: 22rpx;
+color: white;
+position: absolute;
+left: -84rpx;
+top: -14rpx;
+
+}
+.msic_xdt_duration{
+font-size: 22rpx;
+color: white;
+position: absolute;
+right: -84rpx;
+top: -14rpx;
+
+}

@@ -1,0 +1,50 @@
+<!-- <myMsic></myMsic> -->
+<!-- <view wx:if="{{playlist.length>0}}"> -->
+  <view>
+    <view class="my_">
+      <view class="my_tp">
+        <image src="../../../img/bdyy.png"></image>
+      </view>
+      <view class="my_txt">
+        <view class="my_txt_1">本地音乐</view>
+        <view class="my_txt_2"> {{8}} ></view>
+      </view>
+    </view>
+    <view class="my_">
+      <view class="my_tp">
+        <image src="../../../img/bdyy (2).png"></image>
+      </view>
+      <view class="my_txt">
+        <view class="my_txt_1">最近播放</view>
+        <view class="my_txt_2"> {{8}} ></view>
+      </view>
+    </view>
+    <view class="my_">
+      <view class="my_tp">
+        <image src="../../../img/wddt.png"></image>
+      </view>
+      <view class="my_txt">
+        <view class="my_txt_1">我的电台</view>
+        <view class="my_txt_2"> {{8}} ></view>
+      </view>
+    </view>
+    <view class="my_">
+      <view class="my_tp">
+        <image src="../../../img/wdsc.png"></image>
+      </view>
+      <view class="my_txt">
+        <view class="my_txt_1">我的收藏</view>
+        <view class="my_txt_2"> {{8}} ></view>
+      </view>
+    </view>
+  </view>
+  <!-- 我创建的歌单 -->
+  <view class="playlist_" bindtap="goplay">
+    <view class="playlist_tp">
+      <image src="{{playlist.coverImgUrl}}"></image>
+    </view>
+    <view>
+      <view>{{playlist.name}}</view>
+    </view>
+  </view>
+<!-- </view> -->

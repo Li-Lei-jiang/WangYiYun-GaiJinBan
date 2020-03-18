@@ -1,0 +1,128 @@
+<!-- <singerList_zuj ></singerList_zuj> -->
+<view class="singerLeist_input">
+  <view class="singerLeist_tp">
+    <image src="../../../img/fdj.png"></image>
+  </view>
+  <input class="singerLeist_input_ipt" placeholder="请输入歌手" bindinput="inputVal" value="{{inputvalue}}" bindconfirm="confirm_ent"></input>
+</view>
+<scroll-view scroll-x="true" class="kuang">
+  <view class="singerList_list">
+    <view wx:for="{{singerList}}" wx:key="{{id}}" class="singerList_gs">
+      <view data-id="{{item.id}}" bindtap="getType" class="singerList_list_txt {{cont === index?'botm_red' : '' }}" data-index="{{index}}" data-type="{{item.type}}">{{item.name}}</view>
+    </view>
+  </view>
+</scroll-view>
+<!-- 单曲 -->
+<view wx:if="{{cont === 0}}">
+  <view class="single_play">
+    <view class="single_left">
+      <view class="single_tp">
+        <image src="../../../img/bf.png"></image>
+      </view>
+      <view class="single_txt">播放全部</view>
+    </view>
+    <view class="single_right">
+      <view class="single_tp">
+        <image src="../../../img/lieb.png"></image>
+      </view>
+      <view class="single_txt_rig">多选</view>
+    </view>
+  </view>
+  <view>
+    <view wx:for="{{songs}}" wx:key="{{id}}" class="single_border">
+      <view class="single_name">{{item.album.name}}</view>
+      <view class="single_border_rig">
+        <view class="single_tp">
+          <image src="../../../img/下导航_视频_3 (1).png"></image>
+        </view>
+        <view class="single_tp">
+          <image src="../../../img/更多.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 专辑 -->
+<view wx:if="{{cont === 1}}">
+  <view wx:for="{{albums}}" wx:key="{{id}}" class="albums_entirety" data-id="{{item.id}}" bindtap="gospecial" data-item="{{item}}">
+    <view class="albums_tp">
+      <image src="{{item.blurPicUrl}}"></image>
+    </view>
+    <view class="albums_name_">
+      <view class="albums_name">{{item.name}}</view>
+      <view class="albums_time">
+        <text>{{item.artist.name}}</text>--
+        <text>{{item.publishTime}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 歌手 -->
+<view wx:if="{{cont=== 2}}" >
+  <view class="artists"  bindtap="goMsicDetails" wx:for="{{artists}}" wx:key="{{index}}" data-id="{{item.id}}">
+    <view class="artists_tp">
+      <image src="{{item.img1v1Url}}"></image>
+    </view>
+    <view class="artists_name">{{item.name}}</view>
+  </view>
+</view>
+<!-- 歌单 -->
+<view wx:if="{{cont=== 3}}&&{{playlists.length>0}}">
+  <view wx:for="{{playlists}}" wx:key="{{id}}" class="albums_entirety">
+    <view class="albums_tp">
+      <image src="{{item.coverImgUrl}}"></image>
+    </view>
+    <view class="albums_name_">
+      <view class="albums_name">{{item.name}}</view>
+      <view class="albums_time">
+        <text>{{item.playlistCount}} 首音乐</text>--
+        <text>{{item.track.album.name}}</text>
+        <text>{{item.playCount/10000}}万次播放</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 用户 -->
+<view wx:if="{{cont=== 4}}">
+  <view class="artists userprofiles" wx:for="{{userprofiles}}" wx:key="{{id}}">
+    <view class="userprofiles_">
+      <view class="artists_tp userprofiles_tp">
+        <image src="{{item.avatarUrl}}"></image>
+      </view>
+      <view class="artists_name userprofiles_name">
+        <view>{{item.nickname}}</view>
+        <view class="userprofiles_name_">{{item.signature}}</view>
+      </view>
+    </view>
+    <view class="userprofiles_focus">+关注</view>
+  </view>
+</view>
+<!-- 电台 -->
+<view wx:if="{{cont=== 5}}">
+  <view wx:for="{{djRadios}}" wx:key="{{id}}" class="djRadios_" data-id="{{item.id}}" bindtap="toDianT" data-item="{{item}}">
+    <view class="djRadios_tp"><image src="{{item.picUrl}}"></image></view>
+    <view class="djRadios_title">
+      <view class="djRadios_title_name">{{item.name}}</view>
+       <view class="djRadios_title_txt">{{item.desc}}</view>
+    </view>
+  </view>
+</view>
+<!-- 视频 -->
+<view wx:if="{{cont=== 6}}">
+  <view class="videos" wx:for="{{videos}}" wx:key="{{id}}">
+    <view class="videos_tp">
+      <image src="{{item.coverUrl}}"></image>
+    </view>
+    <view class="videos_icon_al">
+      <view class="videos_icon"><image src="../../img/b-166.png"></image></view>
+      <view class="videos_icon_bf">{{item.durationms/10000}}万</view>
+      </view>
+    <view class="videos_title">
+      <view class="videos_title_tit">{{item.title}}</view>
+      <view class="videos_title_tiem">
+        <text>{{item.creator[0].userName}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{cont=== 7}}">暂无</view>

@@ -1,0 +1,84 @@
+<view class="newSong_head">
+  <view class="newSong_head_tp">
+    <image src="{{newSong.album.blurPicUrl||imgUrl}}"></image>
+  </view>
+  <view class="newSong_head_cover">
+    <image src="{{newSong.album.blurPicUrl||imgUrl}}" />
+  </view>
+</view>
+<view class="newSong_head_">
+  <view class="back" bindtap="goBack">
+    <image src="../../../img/fh.png"></image>
+  </view>
+  <view class="newSong_title">专辑</view>
+</view>
+<view class="newSong_name_">
+  <view class="newSong_name_name">{{newSong.album.name}}</view>
+  <view class="newSong_name_ringer">歌手:
+    <text style="color:white;font-size:28rpx">{{newSong.album.artist.name}}</text> ></view>
+</view>
+<view class="newSong_time">
+  <view class="newSong_time_">发行时间：{{newSong.album.publishTime}}</view>
+  <view class="newSong_time_introduce">{{newSong.album.description}}</view>
+</view>
+
+<view class="newSon_icons_choose">
+  <view class="newSon_icons_item">
+    <view class="newSon_icons">
+      <image src="../../../img/消息.png"></image>
+    </view>
+    <view class="newSon_icons_tx">24</view>
+  </view>
+
+  <view class="newSon_icons_item">
+    <view class="newSon_icons">
+      <image src="../../../img/分享.png"></image>
+    </view>
+    <view class="newSon_icons_tx">24</view>
+  </view>
+
+  <view class="newSon_icons_item">
+    <view class="newSon_icons">
+      <image src="../../../img/下载.png"></image>
+    </view>
+    <view class="newSon_icons_tx">24</view>
+  </view>
+
+  <view class="newSon_icons_item">
+    <view class="newSon_icons">
+      <image src="../../../img/多选.png"></image>
+    </view>
+    <view class="newSon_icons_tx">24</view>
+  </view>
+</view>
+<!-- 播放部分 -->
+<view class="newson_vip">
+  <view class="newson_vip_tp">
+    <view class="newson_vip_tp_tp">
+      <image src="../../../img/VIP.png"></image>
+    </view>
+    <view>会员享受高品质听觉盛宴</view>
+  </view>
+  <view> 首开VIP仅5元</view>
+</view>
+<view class="bof_roe">
+  <view class="bof_roes">
+    <view class="bof">
+      <image src="../../../img/bf.png"></image>
+    </view>
+    <view class="bof_text">播放全部(共{{newSong.songs.length}}首)</view>
+  </view>
+  <view class="bof_txt">+收藏</view>
+</view>
+ <!--  data-index="{{item.index}}" -->
+<view class="piay_row" bindtap="goPlay" wx:for="{{newSong.songs}}" wx:key="{{index}}" data-id="{{item.id}}" data-item="{{item}}">
+  <view class="piay_row_index">{{index+1}}</view>
+  <view class="piay_row_msg">
+    <view class="piay_row_msg_name">{{item.name}}</view>
+    <view class="piay_row_msg_txt">
+      <view>独家</view>
+      <view>SQ</view>
+      {{newSong.artist.name}}
+    </view>
+  </view>
+</view>

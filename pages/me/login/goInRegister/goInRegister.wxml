@@ -1,0 +1,59 @@
+<view >
+  <view class="Emall_login">
+    <view class="mobile">
+      <view class="icon">
+        <text class="must">*</text>
+        <view class="icos">
+          <image src="../../../../img/dh.png"></image>
+        </view>
+        <view class="text">手机号</view>
+      </view>
+      <view class="inputs">
+        <input type="text" placeholder="请输入手机号" required></input>
+      </view>
+    </view>
+    <view class="mobile">
+      <view class="icon">
+        <text class="must">*</text>
+        <view class="icos">
+          <image src="../../../../img/nic.png"></image>
+        </view>
+        <view class="text">密码</view>
+      </view>
+      <view class="inputs">
+        <input type="text" placeholder="请输入密码" required></input>
+      </view>
+    </view>
+    <!-- 验证码 -->
+    <view class="mobile">
+      <view class="icon">
+        <text class="must">*</text>
+        <view class="icos">
+          <image src="../../../../img/tp.png"></image>
+        </view>
+        <view class="text">验证码</view>
+      </view>
+      <view class="inputs">
+        <input type="text" placeholder="请输入验证码" required></input>
+      </view>
+      <view class="send_code">发送验码</view>
+    </view>
+    <!-- 昵称 -->
+    <view class="mobile">
+      <view class="icon">
+        <text class="must">*</text>
+        <view class="icos">
+          <image src="../../../../img/nc.png"></image>
+        </view>
+        <view class="text">昵称</view>
+      </view>
+      <view class="inputs">
+        <input type="text" placeholder="请输入昵称" required></input>
+      </view>
+    </view>
+  </view>
+  <view class="login_sub">
+    <view class="nowLogin">立即登录</view>
+    <view class="nowSign">立即注册</view>
+  </view>
+</view>

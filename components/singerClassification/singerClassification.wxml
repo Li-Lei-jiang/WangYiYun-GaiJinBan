@@ -1,0 +1,18 @@
+<view>
+  <scroll-view scroll-x="true" class="kuang">
+    <view class="singer_">
+      <view wx:for="{{singer}}" wx:key="{{id}}" wx:index="{{index}}" class="singer_item">
+        <view class="singer_item  {{ count === index ? 'singer_chexk':''}}" data-cat="{{item.id}}" bindtap="check" data-index="{{index}}">{{item.name}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<!-- <scroll-view scroll-x="true" class="kuang">
+  <view class="retrieve">
+    <text class="retrieve_txt">热</text>
+    <view wx:for="{{retrieve}}" class="retrieve_item" wx:key="{{index}}">
+      <view data-index="{{index}}" bindtap="check_letter" class="retrieve_item：{{counts === index? 'retrieve_txts':''}}" data-item="{{item}}">{{item}}</view>
+    </view>
+  </view>
+</scroll-view> -->

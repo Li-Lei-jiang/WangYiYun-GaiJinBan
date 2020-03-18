@@ -1,0 +1,125 @@
+.menu_tp {
+  width: 100%;
+  height: 500rpx;
+  position: relative;
+  background: #fb856a;
+}
+
+.menu_tp image {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu_icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: -68rpx;
+  left: -65rpx;
+  background: #fe5444;
+  transform: rotateX(130deg);
+
+}
+
+.menu_icon image {
+  width: 31%;
+  height: 27%;
+  position: absolute;
+  top: 30%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+}
+
+.menu_txt {
+  position: absolute;
+  top: 188px;
+  left: 104rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.menu_bf {
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 0 3%;
+}
+
+.menu_bf-all {
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  width: 369rpx;
+}
+
+.menu_bf_tp {
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  top: 20rpx;
+}
+
+.menu_bf_tp image {
+  width: 100%;
+  height: 100%;
+}
+
+.menu_bf_tp_sc {
+  background: #c10d0d;
+  text-align: center;
+  color: white;
+  width: 242rpx;
+  line-height: 100rpx;
+}
+
+.menu_bfb {
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  top: 25rpx;
+}
+
+.menu_bfb image {
+  width: 100%;
+  height: 100%;
+}
+
+.menu_txts {
+  color: #ccc;
+  font-size: 23rpx;
+}
+
+.menu_txtss {
+  color: #ccc;
+  font-size: 27rpx;
+  width: 60rpx;
+  position: relative;
+  top: 25rpx;
+}
+
+.menu_gequ {
+  display: flex;
+  width: 80%;
+}
+
+.menu_names {
+}
+
+.menu_name {
+  font-size: 25rpx;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+  height: 94rpx;
+  line-height: 50rpx;
+}

@@ -1,0 +1,83 @@
+.newMusic{
+  font-size: 25rpx;
+   background: #cdcdcd;
+  padding: 0 3%;
+  border-radius: 14%;
+}
+
+.TheNewDisc {
+  display: flex;
+  justify-content: space-between;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 3%;
+  /* font-weight: bold; */
+}
+.TheNewDisc_all{
+ width: 150rpx;
+
+}
+.TheNewDisc_ {
+  font-weight: normal;
+  color: #cdcdcd;
+  font-size: 23rpx;
+  width: 46rpx;margin-left: 8%;
+
+}
+.TheNewDisc_solid{
+  color: #cdcdcd;
+  font-size:25rpx;width: 46rpx;margin-left: 5%;
+
+}
+
+.TheNewDisc_titl{
+font-size: 28rpx;
+margin-right: 6%;
+width: 46rpx;
+}
+.newSong {
+  font-size: 24rpx;
+  border: 1rpx solid #f7f8fa;
+height: 50rpx;
+width: 124rpx;
+text-align: center;
+line-height: 50rpx;
+margin-top: 1%;
+}
+.newPower{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+  font-weight: bold;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 2% 0 ;
+}
+.song_{
+display: flex;
+justify-content: space-around;
+margin-top: 2%;
+flex-wrap: wrap;
+}
+.song__item{
+
+}
+.song_tp{
+ width: 228rpx;
+  height: 200rpx;
+}
+.song_tp image{
+  width: 100%;
+  height:100%;
+  border-radius: 5%;
+}
+.song_txt{
+   width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 22rpx;
+  text-align: center;
+}

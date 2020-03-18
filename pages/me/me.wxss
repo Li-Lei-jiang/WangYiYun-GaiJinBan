@@ -1,0 +1,94 @@
+.login_ {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.login_butt {
+  background: #1989fa;
+  color: white;
+  margin: 0 auto;
+  width: 150rpx;
+  font-size: 24rpx;
+}
+
+.user_tp {
+  width: 100rpx;
+  height: 100rpx;
+  /* margin-left: 2%; */
+
+}
+
+.user_tp image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.user_head{
+  display: flex;
+  margin: 2%;
+}
+.user_name{
+ padding-left: 7%;
+width: 175rpx;
+text-align: center;
+}
+.uesr_vip{
+background: #EEEEEE;
+font-size: 25rpx;
+margin-top: 10%;
+border-radius: 34%;
+width: 83rpx;
+margin: 10% auto;
+
+}
+.user_sgin{
+  background: #CCCCCC;
+color: white;
+border-radius: 21%;
+width: 81rpx;
+text-align: center;
+font-size: 22rpx;
+height: 36rpx;
+position: relative;
+/* padding-right: 3%; */
+margin-right: 7%;
+top: 42rpx;
+
+}
+.urse_head{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2%;
+  position: relative;
+}
+.urse_mess{
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 34rpx;
+  font-size: 24rpx;
+}
+.urse_mess_txt{
+  color: #CCCCCC
+}
+.urse_all_mess{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+
+}
+.urse_esc{
+  background: #FF976A;
+  color: white;
+  width: 200rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 5%;
+  margin: 10% auto;
+  font-size: 29rpx;
+}

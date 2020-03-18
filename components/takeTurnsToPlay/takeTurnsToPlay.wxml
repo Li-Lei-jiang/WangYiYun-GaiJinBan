@@ -1,0 +1,43 @@
+<!-- 轮播图 -->
+<view class="swiper_tp">
+  <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{banners}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item.imageUrl}}" class="item_tp"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--推荐 -->
+<view class="recommend">
+  <view>
+    <view class="icons">
+      <image src="../../img/mrtjgd.png" style="width:100%;height:100%"></image>
+    </view>
+    <view class="icons_txt">每日推荐</view>
+  </view>
+  <view>
+    <view class="icons">
+      <image src="../../img/gd.png" style="width:100%;height:100%"></image>
+    </view>
+    <view class="icons_txt">歌单</view>
+  </view>
+  <view>
+    <view class="icons">
+      <image src="../../img/ph.png" style="width:100%;height:100%"></image>
+    </view>
+    <view class="icons_txt">排行榜</view>
+  </view>
+  <view>
+    <view class="icons">
+      <image src="../../img/yydt.png" style="width:100%;height:100%"></image>
+    </view>
+    <view class="icons_txt">电台</view>
+  </view>
+  <view>
+    <view class="icons">
+      <image src="../../img/zb.png" style="width:100%;height:100%"></image>
+    </view>
+    <view class="icons_txt">直播</view>
+  </view>
+</view>

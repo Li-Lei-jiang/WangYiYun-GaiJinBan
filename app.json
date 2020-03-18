@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/singer/singer",
+    "pages/me/me",
+    "pages/me/login/login",
+    "pages/me/login/goInRegister/goInRegister",
+    "pages/index/msicDetails/msicDetails",
+    "pages/index/msicDetails/musicPlayer/musicPlayer",
+    "pages/singer/singerDetails/singerDetails",
+    "pages/me/myProfile/myProfile",
+    "pages/index/singerList/singerList",
+    "pages/index/newSong/newSong",
+    "pages/index/dianT/dianT",
+    "pages/me/myMsic/myMsic"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FF0000",
+    "navigationBarTitleText": "网易云音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#FF0000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现",
+        "iconPath": "./img/wyyyys.png",
+        "selectedIconPath": "./img/wyyyy.png"
+      },
+      {
+        "pagePath": "pages/singer/singer",
+        "text": "歌手",
+        "iconPath": "./img/音乐.png",
+        "selectedIconPath": "./img/音乐 (1).png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "账号",
+        "iconPath": "./img/账号.png",
+        "selectedIconPath": "./img/账号 (1).png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+
+}

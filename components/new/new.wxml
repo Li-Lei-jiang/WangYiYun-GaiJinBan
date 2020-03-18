@@ -1,0 +1,17 @@
+<!-- 音乐新势力 -->
+<view class="new">
+  <view class="new_txt" wx:if="{{newIndex===1}}">音乐新势力</view>
+  <view class="new_txt" wx:if="{{newIndex===2}}">推荐电台</view>
+  <view class="new_txt" wx:if="{{newIndex===3}}">推荐节目</view>
+  <view class="newMusic" wx:if="{{newIndex===1}}">新音乐</view>
+  <view class="newMusic" wx:if="{{newIndex===2}}">电台广场</view>
+  <view class="newMusic" wx:if="{{newIndex===3}}">更多节目</view>
+</view>
+<view class="listMusic">
+  <view wx:for="{{newPower}}" wx:key="{{index}}" class="list_item" data-id="{{item.id}}" bindtap="getNew" data-item="{{item}}" bindtap="getDiant" >
+    <view class="music_list-tp">
+      <image src="{{item.picUrl || item.coverUrl || item.song.album.blurPicUrl}}" class="music_list-tp_"></image>
+    </view>
+    <view class="music_list-text">{{item.name}}</view>
+  </view>
+</view>

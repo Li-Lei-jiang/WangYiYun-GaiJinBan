@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "indexSearch" :"../../components/indexSearch/indexSearch",
+    "takeTurnsToPlay":"../../components/takeTurnsToPlay/takeTurnsToPlay",
+    "recommendThePlaylist":"../../components/recommendThePlaylist/recommendThePlaylist",
+    "newSongNewAlbum":"../../components/newSongNewAlbum/newSongNewAlbum",
+    "new":"../../components/new/new"
+  }
+}

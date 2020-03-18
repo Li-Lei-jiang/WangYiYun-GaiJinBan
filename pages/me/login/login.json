@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "loginInAccountAndpassword" :"../../../components/loginInAccountAndpassword/loginInAccountAndpassword",
+    "emailLloginInAccountAndpassword":"../../../components/emailLloginInAccountAndpassword/emailLloginInAccountAndpassword"
+  }
+}

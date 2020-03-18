@@ -1,0 +1,46 @@
+.singer_ {
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.kuang {
+  height: 60rpx;
+}
+
+.singer_chexk {
+  /* background: red; */
+  border-bottom: 3rpx solid #f00;
+}
+
+.singer_item {
+  height: 54rpx;
+  color: #a2a3a4;
+  width: 165rpx;
+  line-height: 54rpx;
+  font-size: 24rpx;
+  margin: 0 1%;
+  text-align: center;
+  /* border-bottom:5rpx solid #FF0000; */
+}
+
+.retrieve {
+  display: flex;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  width: 100%;
+padding: 0 3%;
+}
+.retrieve_txts{
+  color: red;
+}
+.retrieve_txt {
+  background: red;
+  width: 50rpx;
+  text-align: center;
+  color: white;
+}
+
+.retrieve_item {
+  margin: 0 3%;
+}

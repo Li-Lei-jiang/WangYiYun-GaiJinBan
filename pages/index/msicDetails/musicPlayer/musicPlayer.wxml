@@ -1,0 +1,35 @@
+<view class="imgUrl_tps">
+  <image src="{{imgUrl}}"></image>
+</view>
+<view class="msic_titles">{{name}}</view>
+<view class="imgUrl_tp">
+  <image src="{{imgUrl}}"></image>
+</view>
+<!-- 进度条 -->
+<view class="msic_xdt">
+  <view class="msic_xdt_currentTime">{{sliderMin}}</view>
+  <van-slider value="{{valueNum}}" bind:drag />
+  <view class="msic_xdt_duration">{{sliderMax}}</view>
+</view>
+
+<!-- 播放栏 -->
+<view class="msic_tp_lists">
+  <view class="msic_tp" bindtap="singleCycle">
+    <image src="../../../../img/xxh.png"></image>
+  </view>
+  <view class="msic_tp">
+    <image src="../../../../img/sys.png"></image>
+  </view>
+  <view class="msic_tp" bindtap="gopaly" wx:if="{{flag=== true}}">
+    <image src="../../../../img/bof.png"></image>
+  </view>
+  <view class="msic_tp" bindtap="gostop" wx:if="{{flag=== false}}">
+    <image src="../../../../img/zt.png"></image>
+  </view>
+  <view class="msic_tp">
+    <image src="../../../../img/xys.png"></image>
+  </view>
+  <view class="msic_tp">
+    <image src="../../../../img/lib.png"></image>
+  </view>
+</view>

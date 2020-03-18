@@ -1,0 +1,21 @@
+<view>
+  <view class="artist_tiele">{{singer_details.name}}</view>
+  <view class="artist_tp">
+    <image src="{{singer_details.img1v1Url}}"></image>
+  </view>
+</view>
+<view class="singMsic_list">
+  <view wx:for="{{singMsic}}" wx:key="{{index}}" class="singMsic_item" bindtap="msic_details" data-id="{{item.id}}" data-img="{{item.al.picUrl}}" data-name="{{item.name}}" data-item="{{item}}">
+    <view class="singMsic_show">
+      <view class="singMsic_wz">{{index}}</view>
+      <view class="singMsic_singer">
+        <view>{{item.name}}</view>
+        <view class="singMsic_">
+          <view class="singMsic_txt">{{item.ar[0].name}}--{{item.name}}</view>
+          <view class="singMsic_txt">{{item.alia}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="singMsic_bf"><image src="../../../img/bf.png"></image></view>
+  </view>
+</view>

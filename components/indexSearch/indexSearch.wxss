@@ -1,0 +1,164 @@
+.head{
+display: flex;
+justify-content: space-between;
+/* line-height: 80rpx; */
+padding: 0 2%;
+margin: 1% 0;
+}
+.head_tp{
+  width: 60rpx;
+  height: 60rpx;
+}
+.head_tp image{
+  width: 100%;
+  height: 100%;
+}
+.head_inpt{
+width: 70%;
+/* line-height: 60rpx; */
+}
+.head_inpt_{
+width: 100%;
+position: relative;
+top: 5rpx;
+border-radius: 9%;
+background: #F7F8FA;
+font-size: 24rpx;
+text-align: center;
+
+}
+.head_tp_inpt{
+width: 40rpx;
+height: 40rpx;
+position: absolute;
+top: 9rpx;
+left: 146rpx;
+}
+.head_tp_inpt image{
+  width: 100%;
+height: 100%;
+
+}
+.head_inpt_er{
+display: flex;
+line-height: 60rpx;
+justify-content: space-around;
+}
+.head_inpt_er_input{
+background: #F7F8FA;
+width: 72%;
+padding: 1% 0 1% 9%;
+font-size: 24rpx;
+
+}
+.head_inpt_er_true{
+  margin: 3% 0;
+  position: relative;
+}
+.head_inpt_er_txt{
+font-size: 27rpx;
+
+}
+.head_inpt_er_tp{
+  position: absolute;
+  top: 16rpx;
+left: 40rpx;
+width: 40rpx;
+height: 40rpx;
+z-index: 5;
+
+}
+.SearchHistory{
+height: 200rpx
+}
+.SearchHistory_tory{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  line-height: 60rpx
+}
+.SearchHistory_txt{
+  font-size: 25rpx;
+  font-weight: bold;
+}
+.SearchHistory_tp{
+  height:50rpx;
+  width: 50rpx;
+}
+.SearchHistory_tp image{
+   width: 100%;
+height: 100%;
+}
+/* 热搜 */
+.veryHot_kuang{
+  padding-left: 2%;
+line-height: 60rpx;
+
+}
+.veryHot{
+display: flex;
+line-height: 60rpx;
+}
+.veryHot_index{
+width: 50rpx;
+text-align: center;
+
+}
+.veryHot_name{
+  font-size: 29rpx;
+
+}
+.veryHot_hot{
+  color: red;
+  font-weight: bold;
+  margin-left: 5%;
+
+}
+
+.SearchHistory_item{
+  display: flex;
+  margin-left: 2%;
+  
+}
+.SearchHistory_{
+text-align: center;
+width: 200rpx;
+line-height: 50rpx;
+border: 1rpx solid #cdcdcd;
+
+}
+/* 建议展示 */
+.sreach_value {
+  line-height: 60rpx;
+  width: 100%;
+  color: cyan;
+  margin-top: 2%;
+  padding-left: 4%;
+  font-size: 27rpx;
+  border-bottom: 1rpx solid #F7F8FA;
+}
+.erarch_result{
+display: flex;
+/* line-height: 60rpx; */
+padding-left: 4%;
+background: #F7F8FA;
+}
+/* .erarch_result:hover{
+  background:#cdcdcd;
+} */
+.erarch_result_tp{
+  width: 36rpx;
+height: 36rpx;
+
+}
+.erarch_result_tp  image{
+  width: 100%;
+  height: 100%;
+}
+.erarch_result_txt{
+  margin-left: 3%;
+font-size: 28rpx;
+line-height: 70rpx;
+border-bottom: 1rpx solid #F7F8FA;
+width: 100%;
+}

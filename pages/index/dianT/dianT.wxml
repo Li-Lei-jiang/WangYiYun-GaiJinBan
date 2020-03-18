@@ -1,0 +1,22 @@
+<view class="dianT_tp">
+  <image src="{{program.blurCoverUrl||picUrl}}"></image>
+</view>
+<view class="dianT_tp_tx">
+  <view class="dianT_tp_tx1">{{program.dj.signature}}</view>
+  <view class="dianT_tp_tx2">{{program.listenerCount}}人订阅</view>
+</view>
+<view class="dianT_tp_icon_">
+  <view class="dianT_tp_icon">
+    <image src="../../../img/wdsc.png"></image>
+  </view>
+  <view>订阅</view>
+</view>
+<view class="dianT_choose">
+  <view class="dianT_choose {{count===1?'dianT_condition':''}}" bindtap="checkedDetails">详情</view>
+  <view class="dianT_choose {{count===2?'dianT_condition':''}}" bindtap="checkedCARD">节目</view>
+</view>
+<view wx:if="{{count===1}}">
+<view>电台内容简介</view>
+<view>{{ program.description||program.channels-program.name }}</view>
+</view>
+<view wx:if="{{count===2}}">暂无数据</view>
